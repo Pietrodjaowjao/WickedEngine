@@ -4026,7 +4026,7 @@ using namespace vulkan_internal;
 					&copyRegion
 				);
 
-				copyAllocator.submit(cmd);
+				copyAllocator.submit(cmd, false);
 			}
 		}
 

@@ -848,6 +848,12 @@ namespace wi::input
 			case KEYBOARD_BUTTON_END:
 				keycode = VK_END;
 				break;
+			case KEYBOARD_BUTTON_MINUS:
+				keycode = VK_OEM_MINUS;
+				break;
+			case KEYBOARD_BUTTON_EQUALS:
+				keycode = VK_OEM_PLUS;
+				break;
 #endif // _WIN32
 					
 #ifdef PLATFORM_MACOS
@@ -1006,6 +1012,12 @@ namespace wi::input
 				break;
 			case KEYBOARD_BUTTON_END:
 				keycode = kVK_End;
+				break;
+			case KEYBOARD_BUTTON_MINUS:
+				keycode = kVK_ANSI_Minus;
+				break;
+			case KEYBOARD_BUTTON_EQUALS:
+				keycode = kVK_ANSI_Equal;
 				break;
 			case (BUTTON)'A':
 				keycode = kVK_ANSI_A;
@@ -1602,6 +1614,10 @@ namespace wi::input
 			return KEYBOARD_BUTTON_ALTGR;
 		if (strcmp(str, "End") == 0)
 			return KEYBOARD_BUTTON_END;
+		if (strcmp(str, "Minus") == 0)
+			return KEYBOARD_BUTTON_MINUS;
+		if (strcmp(str, "Equals") == 0)
+			return KEYBOARD_BUTTON_EQUALS;
 
 		if (strcmp(str, "Left Shift") == 0)
 			return KEYBOARD_BUTTON_LSHIFT;
@@ -1810,6 +1826,8 @@ namespace wi::input
 		case wi::input::KEYBOARD_BUTTON_LCOMMAND: return "Left Command";
 		case wi::input::KEYBOARD_BUTTON_RCOMMAND: return "Right Command";
 		case wi::input::KEYBOARD_BUTTON_END: return "End";
+		case wi::input::KEYBOARD_BUTTON_MINUS: return "Minus";
+		case wi::input::KEYBOARD_BUTTON_EQUALS: return "Equals";
 		default:
 			break;
 		}

@@ -303,6 +303,10 @@ namespace wi::input::sdlinput
                 return wi::input::KEYBOARD_BUTTON_SEPARATOR;
             case SDL_SCANCODE_KP_MINUS:
                 return wi::input::KEYBOARD_BUTTON_SUBTRACT;
+            case SDL_SCANCODE_MINUS:
+                return wi::input::KEYBOARD_BUTTON_MINUS;
+            case SDL_SCANCODE_EQUALS:
+                return wi::input::KEYBOARD_BUTTON_EQUALS;
             case SDL_SCANCODE_KP_DECIMAL:
                 return wi::input::KEYBOARD_BUTTON_DECIMAL;
             case SDL_SCANCODE_KP_DIVIDE:
@@ -707,6 +711,10 @@ namespace wi::input::sdlinput
                 return wi::input::KEYBOARD_BUTTON_SEPARATOR;
             case SDL_SCANCODE_KP_MINUS:
                 return wi::input::KEYBOARD_BUTTON_SUBTRACT;
+            case SDL_SCANCODE_MINUS:
+                return wi::input::KEYBOARD_BUTTON_MINUS;
+            case SDL_SCANCODE_EQUALS:
+                return wi::input::KEYBOARD_BUTTON_EQUALS;
             case SDL_SCANCODE_KP_DECIMAL:
                 return wi::input::KEYBOARD_BUTTON_DECIMAL;
             case SDL_SCANCODE_KP_DIVIDE:

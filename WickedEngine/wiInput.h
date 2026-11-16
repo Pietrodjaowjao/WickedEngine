@@ -142,6 +142,8 @@ namespace wi::input
 		KEYBOARD_BUTTON_LCOMMAND, // MacOS specific
 		KEYBOARD_BUTTON_RCOMMAND, // MacOS specific
 		KEYBOARD_BUTTON_END,
+		KEYBOARD_BUTTON_MINUS,
+		KEYBOARD_BUTTON_EQUALS,
 
 		// must be the last entry
 		BUTTON_ENUM_SIZE
